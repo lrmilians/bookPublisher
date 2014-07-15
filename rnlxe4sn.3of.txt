@@ -1,0 +1,19 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   .gitignore
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_functionalities
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_functionality_types
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_list
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_roles
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_roles_functionalities
+#	deleted:    app/tmp/cache/models/myapp_cake_model_default_bookpublisherdb_users
+#	deleted:    app/tmp/cache/persistent/myapp_cake_core_cake_console_eng
+#	deleted:    app/tmp/cache/persistent/myapp_cake_core_default_es-es
+#	deleted:    app/tmp/cache/persistent/myapp_cake_core_method_cache
+#
+
