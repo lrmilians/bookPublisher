@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 25, 2014, 2:58:26 PM
+    Author     : lrmilians
+*/
+
+.custom-combobox {position: relative;display: inline-block;}
+.custom-combobox-toggle {position: absolute;top: 0;bottom: 0;margin-left: -1px;padding: 0;/* support: IE7 */*height: 1.7em;*top: 0.1em;}
+.custom-combobox-input {padding: 0.3em;border-radius: 5px;margin: 0 0 0 15px;}
+
+.navbar {margin-bottom: 6px;}
+
+h2 {margin-top: 10px;}
+
+#BillDateDay {margin: 8px;border-radius: 4px;padding: 3px;box-shadow: 1px 1px 2px #888888;}
+#BillDateMonth {margin: 8px;border-radius: 4px;padding: 3px;box-shadow: 1px 1px 2px #888888;}
+#BillDateYear {margin: 8px;border-radius: 4px;padding: 3px;box-shadow: 1px 1px 2px #888888;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background: #FFF;box-shadow: 1px 1px 2px #888888;}
+
+.navbar-default, .well{background-color: #e6e7ec;border-color: #E7E7E7;}
+
+.background {background-image: url("images/pago-de-impuestos-opacity.png");}
+
+.user {color: #777777;float: left;padding: 15px 0;}
+.role {width: 380px;}
+
+.dateTopMenu {float: right;width: 135px;}
+.date {margin: 18px 0 0;}
+
+/*--- Menu Actions ---*/
+.navigation {margin: 0 10px 0 0;padding:5px;list-style:none;float: left;text-align: center !important;}	
+.navigation  img {width: 20px !important;height: 20px !important;}
+.navigation>li>a {width: 29px !important;height: 29px !important;}
+/* Little tricking with positions */
+.navigation  li {float:left;width:35px;position:relative;}
+/* Playing with Main Categories */
+.navigation  li a {display:block;padding:2px 2px 2px 2px;text-decoration:none;background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E6E6E6));
+    background: -moz-linear-gradient(top, white, #E6E6E6);background: -ms-linear-gradient(top,white,#E6E6E6);-webkit-box-shadow: 1px 1px 4px #555;-moz-box-shadow: 1px 1px 4px #555; /* FF3.5 - 3.6 */
+    box-shadow: 1px 1px 4px #555;border: 1px solid #E6E6E6;}
+.navigation  li a:hover {color:#F2861D;}
+/* Sub Cat Menu stuff*/
+.navigation  ul {position:absolute;left:0;display:none;margin:0 0 0 -1px;padding:0;list-style:none;z-index: 1;}
+.navigation  ul li {width:150px;float:left;border-top:none;}
+/* Sub Cat menu link properties */
+.navigation  ul a {display:block;height:25px;padding:2px;color:#333333;text-decoration:none;text-align: left !important;width: 75px;}
+.navigation  ul a:hover {color:#333;background: #ffffff;}
+.navigation  ul li ul a {color:#333;background: #9B9B9B;}
+/*--- EndActions ---*/
+
+.books-cartoon {width: 45%; margin: 1% 29%;}
