@@ -1,5 +1,11 @@
 $(document).ready(function() {
     menuActions();
+    
+    $('.sortable').nestedSortable({
+            handle: 'div',
+            items: 'li',
+            toleranceElement: '> div'
+        });
 
 });
 

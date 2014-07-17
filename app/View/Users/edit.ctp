@@ -42,13 +42,8 @@
                             <?php echo $this->Form->input('password_confirm_update', array('label' => 'Confirmar Nueva Contraseña*', 'maxLength' => 255, 'title' => 'Confirm New password', 'type' => 'password', 'required' => 0, 'class' => 'form-control')); ?>
                         </div>
                         <div class="form-group">
-                            <?php echo $this->Form->input('role_id', array('label' => 'Rol', 'class' => 'form-control', 'disabled' => true , 'readonly' => true)); ?>
+                            <?php echo $this->Form->input('role_id', array('label' => 'Rol', 'class' => 'form-control')); ?>
                         </div>
-                        <?php if ($this->request->data['User']['role_id'] == 8){?>
-                            <div class="form-group">
-                                <?php echo $this->Form->input('counter_id', array('label' => 'Contador *', 'class' => 'form-control'));?>
-                            </div>
-                        <?php }?>
                         <div class="form-group">
                             <?php echo $this->Form->input('active', array('label' => 'Activo')); ?>
                         </div>

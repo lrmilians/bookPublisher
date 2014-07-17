@@ -22,6 +22,7 @@
                                         <li><a href="#"><?php echo $this->Html->image('tools.png')?></a>
                                             <ul class="level1">
                                                 <li><?php echo $this->Html->link(__('Ver'), array('action' => 'view', $book['Book']['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
+                                                <li><?php echo $this->Html->link(__('Contenido'), array('action' => 'showContent', $book['Book']['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
                                                 <li><?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $book['Book']['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
                                                 <li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $book['Book']['id']), array('class' => 'btn btn-default btn-xs'), __('Está seguro que desea eliminar el libro '.$book['Book']['title'].' ?', $book['Book']['id'])); ?></li>         
                                             </ul>

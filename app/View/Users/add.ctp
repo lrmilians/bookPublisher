@@ -39,16 +39,8 @@
                             <?php echo $this->Form->input('password_confirm', array('label' => 'Confirmar Contraseña *', 'maxLength' => 255, 'title' => 'Confirm password', 'type' => 'password', 'class' => 'form-control')); ?>
                         </div>
                         <div class="form-group">
-                            <?php if ($idRole == null){
-                                    echo $this->Form->input('role_id', array('label' => 'Rol *', 'class' => 'form-control'));
-                            }else
-                                    echo $this->Form->input('role_id', array('label' => 'Rol *', 'class' => 'form-control disabled', 'readonly' => 'readonly')); ?>
+                            <?php  echo $this->Form->input('role_id', array('label' => 'Rol *', 'class' => 'form-control'));?>
                         </div>
-                        <?php if ($idRole == 8){?>
-                            <div class="form-group">
-                                <?php echo $this->Form->input('counter_id', array('label' => 'Contador *', 'class' => 'form-control'));?>
-                            </div>
-                        <?php }?>
                         <div class="form-group">
                             <?php echo $this->Form->input('active', array('label' => 'Activo *', 'checked' => true)); ?>
                         </div>
@@ -66,12 +58,3 @@
         </div>
     </div>
 </div>
-<?php
-/*   if($this->Session->check('Auth.User')){
-  echo $this->Html->link( "Return to Dashboard",   array('action'=>'index') );
-  echo "<br>";
-  echo $this->Html->link( "Logout",   array('action'=>'logout') );
-  }else{
-  echo $this->Html->link( "Return to Login Screen",   array('action'=>'login') );
-  } */
-?>

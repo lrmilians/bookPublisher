@@ -15,7 +15,8 @@
         
         echo $this->Html->script('libs/jquery-1.10.2');   
         echo $this->Html->script('libs/jquery-1.10.2.map');
-        echo $this->Html->script('libs/jquery-ui-1.10.4');
+        echo $this->Html->script('libs/jquery-ui-1.10.4.min');
+        echo $this->Html->script('libs/jquery.mjs.nestedSortable');
         echo $this->Html->script('libs/bootstrap');
         echo $this->Html->script('misJs.js');
         echo $this->Html->script('autocomplete.js');

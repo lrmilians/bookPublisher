@@ -46,12 +46,6 @@
                             <td><strong><?php echo __('Rol'); ?></strong></td>
                             <td><?php echo h($user['Role']['name']); ?></td>
                         </tr>
-                        <?php if ($user['User']['role_id'] == 8){?>
-                        <tr>
-                            <td><strong><?php echo __('Contador'); ?></strong></td>
-                            <td><?php echo h($counter['User']['name']); ?></td>
-                        </tr>
-                        <?php }?>
                         <tr>
                             <td><strong><?php echo __('Creado'); ?></strong></td>
                             <td><?php echo h($user['User']['created']); ?></td>
@@ -63,12 +57,7 @@
                     </tbody>
                 </table>
                 <div class="form-group col-sm-3 col-sm-offset-5">
-                        <?php if ($this->Session->read('Auth.User.Role.id') == 6){?>
-                            <?php echo $this->Html->link('Regresar','/users', array('class' => 'btn btn-large btn-primary')); ?>
-                        <?php }?>
-                        <?php if ($this->Session->read('Auth.User.Role.id') == 7){?>
-                            <?php echo $this->Html->link('Regresar','/users/index/'.$this->Session->read('Auth.User.id'), array('class' => 'btn btn-large btn-primary')); ?>
-                        <?php }?>
+                    <?php echo $this->Html->link('Regresar','/users', array('class' => 'btn btn-large btn-primary')); ?>
                 </div>   
             </div>
         </div>

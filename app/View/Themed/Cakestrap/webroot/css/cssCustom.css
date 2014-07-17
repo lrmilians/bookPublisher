@@ -1,13 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Mar 25, 2014, 2:58:26 PM
-    Author     : lrmilians
-*/
-
 .custom-combobox {position: relative;display: inline-block;}
 .custom-combobox-toggle {position: absolute;top: 0;bottom: 0;margin-left: -1px;padding: 0;/* support: IE7 */*height: 1.7em;*top: 0.1em;}
 .custom-combobox-input {padding: 0.3em;border-radius: 5px;margin: 0 0 0 15px;}
@@ -35,20 +25,28 @@ h2 {margin-top: 10px;}
 .navigation {margin: 0 10px 0 0;padding:5px;list-style:none;float: left;text-align: center !important;}	
 .navigation  img {width: 20px !important;height: 20px !important;}
 .navigation>li>a {width: 29px !important;height: 29px !important;}
-/* Little tricking with positions */
 .navigation  li {float:left;width:35px;position:relative;}
-/* Playing with Main Categories */
 .navigation  li a {display:block;padding:2px 2px 2px 2px;text-decoration:none;background: -webkit-gradient(linear, left top, left bottom, from(white), to(#E6E6E6));
     background: -moz-linear-gradient(top, white, #E6E6E6);background: -ms-linear-gradient(top,white,#E6E6E6);-webkit-box-shadow: 1px 1px 4px #555;-moz-box-shadow: 1px 1px 4px #555; /* FF3.5 - 3.6 */
     box-shadow: 1px 1px 4px #555;border: 1px solid #E6E6E6;}
 .navigation  li a:hover {color:#F2861D;}
-/* Sub Cat Menu stuff*/
 .navigation  ul {position:absolute;left:0;display:none;margin:0 0 0 -1px;padding:0;list-style:none;z-index: 1;}
 .navigation  ul li {width:150px;float:left;border-top:none;}
-/* Sub Cat menu link properties */
 .navigation  ul a {display:block;height:25px;padding:2px;color:#333333;text-decoration:none;text-align: left !important;width: 75px;}
 .navigation  ul a:hover {color:#333;background: #ffffff;}
 .navigation  ul li ul a {color:#333;background: #9B9B9B;}
 /*--- EndActions ---*/
 
 .books-cartoon {width: 45%; margin: 1% 29%;}
+
+ol {width: 30em;margin: 2em;padding: .5em;list-style: none;counter-reset: item;}
+ol li {display: block;margin: 0.5em 0;padding-left: 2em;}
+ol li:before {display: inline-block;margin-left: -2em;margin-right: 0.5em;text-align: center;content: counters(item, ".") ".";counter-increment: item;float: left;}
+ol ol {width: auto;margin: 0;padding: 0.5em 0;}
+ol li li:before {content: counters(item, ".") " ";}
+ol ol ol {padding: 0.5em 0 0;}
+ol li li {background: #FFF;}
+ol li li li {}
+ol li li li:before {}
+.sortable li.mjs-nestedSortable-leaf div {}
+.sortable li div {cursor: move;margin: 0;padding: -6px;}

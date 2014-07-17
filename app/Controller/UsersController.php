@@ -20,11 +20,8 @@ class UsersController extends AppController {
         return parent::isAuthorized($user);
     }
 
-    public function welcome() {
-       
-    }
+    public function welcome() {}
 
-    
     public function login() {
         if ($this->Session->check('Auth.User')) {
             $this->redirect(array('action' => 'index'));
@@ -68,12 +65,9 @@ class UsersController extends AppController {
         $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
         $user = $this->User->find('first', $options);
         $this->set('user', $user);
-        if ($user['User']['role_id'] == 8) {
-            $this->set('counter', $this->User->find('first', array('conditions' => array('User.id' => $user['User']['counter_id']))));
-        }
     }
 
-    public function add($idRole = null) {
+    public function add() {
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
@@ -83,25 +77,12 @@ class UsersController extends AppController {
                 $this->Session->setFlash(__('El usuario no ha sido añadido.'), 'flash/error');
             }
         }
-        if ($idRole == null) {
-            $roles = $this->User->Role->find('list');
-        } elseif ($idRole == 7) { //Contador
-            $roles = $this->User->Role->find('list', array('conditions' => array('Role.id' => $idRole)));
-        } elseif ($idRole == 8) { //Usuarios
-            $roles = $this->User->Role->find('list', array('conditions' => array('Role.id' => $idRole)));
-            $counters = $this->User->find('list', array('conditions' => array('role_id' => 7)));
-            $this->set('counters', $counters);
-        } elseif ($idRole == 6) { //Administradores
-            $roles = $this->User->Role->find('list', array('conditions' => array('Role.id' => $idRole)));
-        }
-
-        $reportingPeriod = array('mensual' => 'Mensual', 'semestral' => 'Semestral');
-        $this->set(compact('roles', 'cities'));
-        $this->set('reportingPeriod', $reportingPeriod);
-        $this->set('idRole', $idRole);
+       
+        $roles = $this->User->Role->find('list');
+        $this->set(compact('roles'));
     }
 
-    public function edit($id = null, $idRole = null) {
+    public function edit($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists($id)) {
             throw new NotFoundException(__('Usuario no válido.'));
@@ -117,15 +98,8 @@ class UsersController extends AppController {
             $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
             $this->request->data = $this->User->find('first', $options);
         }
-        if ($idRole == 8) { //Usuarios
-            $counters = $this->User->find('list', array('conditions' => array('role_id' => 7)));
-            $this->set('counters', $counters);
-        }
         $roles = $this->User->Role->find('list');
-        
-        $reportingPeriod = array('mensual' => 'Mensual', 'semestral' => 'Semestral');
-        $this->set(compact('roles', 'cities'));
-        $this->set('reportingPeriod', $reportingPeriod);
+        $this->set(compact('roles'));
     }
 
     public function delete($id = null) {

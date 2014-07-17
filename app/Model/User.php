@@ -174,16 +174,16 @@ class User extends AppModel {
             )
         );
         if (!empty($username)) {
-            if ($this->data[$this->alias]['id'] == $username['User']['id']) {
-
-                return true;
-            } else {
+            if ($this->data[$this->alias]['username'] == $username['User']['username']) {
 
                 return false;
+            } else {
+
+                return true;
             }
         } else {
 
-            return true;
+            return false;
         }
     }
 
@@ -200,16 +200,16 @@ class User extends AppModel {
             )
         );
         if (!empty($username)) {
-            if ($this->data[$this->alias]['id'] == $username['User']['id']) {
-
-                return true;
-            } else {
+            if ($this->data[$this->alias]['ci'] == $username['User']['ci']) {
 
                 return false;
+            } else {
+
+                return true;
             }
         } else {
 
-            return true;
+            return false;
         }
     }
 
@@ -217,7 +217,8 @@ class User extends AppModel {
         $email = $this->find(
             'first', array(
                 'fields' => array(
-                    'User.id'
+                    'User.id',
+                    'User.email'
                 ),
                 'conditions' => array(
                     'User.email' => $check['email']
@@ -225,16 +226,16 @@ class User extends AppModel {
             )
         );
         if (!empty($email)) {
-            if ($this->data[$this->alias]['id'] == $email['User']['id']) {
-
-                return true;
-            } else {
+            if ($this->data[$this->alias]['email'] == $email['User']['email']) {
 
                 return false;
+            } else {
+
+                return true;
             }
         } else {
 
-            return true;
+            return false;
         }
     }
 
@@ -242,7 +243,8 @@ class User extends AppModel {
         $ruc = $this->find(
             'first', array(
                 'fields' => array(
-                    'User.id'
+                    'User.id',
+                    'User.ruc'
                 ),
                 'conditions' => array(
                     'User.ruc' => $check['ruc']
@@ -251,16 +253,16 @@ class User extends AppModel {
         );
 
         if (!empty($ruc)) {
-            if ($this->data[$this->alias]['id'] == $ruc['User']['id']) {
-
-                return true;
-            } else {
+            if ($this->data[$this->alias]['ruc'] == $ruc['User']['ruc']) {
 
                 return false;
+            } else {
+
+                return true;
             }
         } else {
 
-            return true;
+            return false;
         }
     }
 
