@@ -13,10 +13,9 @@
                         <?php 
                             if (!$this->Session->read('haveContent')) {
                                 echo $this->Html->link('Adicionar contenido','/table_contents/add', array('class' => 'btn btn-large btn-primary'));
-                            } else {
+                            } else { 
                                 echo $this->Form->button('Actualizar contenidos', array('class' => 'btn btn-large btn-primary','onclick'=>'updateContent()'));
-                            }
-                            
+                            }   
                         ?>
                     </div>   
                     <div class="form-group col-sm-3" >

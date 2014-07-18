@@ -32,16 +32,16 @@ class Book extends AppModel {
             )
         );
         if (!empty($bookTitle)) { 
-            if ($this->data[$this->alias]['title'] == $bookTitle['Book']['title']) {
+            if ($this->data[$this->alias]['id'] == $bookTitle['Book']['id']) {
                 
-                return false;
+                return true;
             } else {
 
-                return true;
+                return false;
             }
         } else {
 
-            return false;
+            return true;
         }
     }
     

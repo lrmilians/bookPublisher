@@ -174,16 +174,16 @@ class User extends AppModel {
             )
         );
         if (!empty($username)) {
-            if ($this->data[$this->alias]['username'] == $username['User']['username']) {
-
-                return false;
-            } else {
+            if ($this->data[$this->alias]['id'] == $username['User']['id']) {
 
                 return true;
+            } else {
+
+                return false;
             }
         } else {
 
-            return false;
+            return true;
         }
     }
 
@@ -200,16 +200,16 @@ class User extends AppModel {
             )
         );
         if (!empty($username)) {
-            if ($this->data[$this->alias]['ci'] == $username['User']['ci']) {
-
-                return false;
-            } else {
+            if ($this->data[$this->alias]['id'] == $username['User']['id']) {
 
                 return true;
+            } else {
+
+                return false;
             }
         } else {
 
-            return false;
+            return true;
         }
     }
 
@@ -226,16 +226,16 @@ class User extends AppModel {
             )
         );
         if (!empty($email)) {
-            if ($this->data[$this->alias]['email'] == $email['User']['email']) {
-
-                return false;
-            } else {
+            if ($this->data[$this->alias]['id'] == $email['User']['id']) {
 
                 return true;
+            } else {
+
+                return false;
             }
         } else {
 
-            return false;
+            return true;
         }
     }
 
@@ -253,16 +253,16 @@ class User extends AppModel {
         );
 
         if (!empty($ruc)) {
-            if ($this->data[$this->alias]['ruc'] == $ruc['User']['ruc']) {
-
-                return false;
-            } else {
+            if ($this->data[$this->alias]['id'] == $ruc['User']['id']) {
 
                 return true;
+            } else {
+
+                return false;
             }
         } else {
 
-            return false;
+            return true;
         }
     }
 

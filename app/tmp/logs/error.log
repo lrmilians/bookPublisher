@@ -7219,3 +7219,21 @@ Request URL: /js/libs/jquery-1.10.2.map.js
 Stack Trace:
 #0 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-07-18 17:17:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/libs/jquery-1.10.2.map.js
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-18 17:17:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/libs/jquery-1.10.2.map.js
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

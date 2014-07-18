@@ -4,7 +4,7 @@
     <head>
         <?php echo $this->Html->charset(); ?>
         <title><?php echo $cakeDescription ?>: </title>
-        <?php echo $this->Html->meta('icon');
+        <?php echo $this->Html->meta('icon',$this->Html->url('/img/favicon.png'));
         echo $this->fetch('meta');
 
         echo $this->Html->css('bootstrap');
@@ -43,6 +43,6 @@
                 <small><?php echo $this->element('sql_dump'); ?></small>
             </div>
         </div>
-        <?php echo $this->Js->writeBuffer(); // Write cached scripts ?>
+        <?php echo $this->Js->writeBuffer();?>
     </body>
 </html>
