@@ -5,6 +5,7 @@ class BooksController extends AppController {
 
     public $components = array('Paginator', 'Session');
     public $uses = array('Book', 'TableContent');
+    public $helpers = array('Js');
     
     public function index() {
         $this->Book->recursive = 0;
@@ -70,29 +71,46 @@ class BooksController extends AppController {
         if (!$this->Book->exists($id)) {
             throw new NotFoundException(__('Libro no válido'));
         }    
-        $options = array('conditions' => array('Book.' . $this->Book->primaryKey => $id));
-        $this->set('book', $this->Book->find('first', $options));
-        $this->set('bookId', $id);
-        
+        if ($this->request->is('post') || $this->request->is('put')) { 
+            $arrayItems = array();
+            foreach ($this->request->data['values'] as $values) {
+                $arrayItems['TableContent']['id'] = $values['0'];
+                $arrayItems['TableContent']['level'] = $values['1'];
+                $arrayItems['TableContent']['order'] = $values['2'];
+                $arrayItems['TableContent']['parent_id'] = $values['3'];
+                $arrayItems['TableContent']['children'] = $values['4'];
+                $this->TableContent->save($arrayItems);
+            }
+            $this->render();
+        } else {
+            $options = array('conditions' => array('Book.' . $this->Book->primaryKey => $id));
+            $this->set('book', $this->Book->find('first', $options));
+            $this->set('bookId', $id);
+        }    
     }
     
     public function loadTable ($id, $parentId) {
-        $options = array('conditions' => array('TableContent.book_id' => $id, 'TableContent.parent_id' => $parentId));
+        $options = array('conditions' => array('TableContent.book_id' => $id, 'TableContent.parent_id' => $parentId), 'order' => array('TableContent.order' => 'asc'));
         $book = $this->Book->TableContent->find('all', $options);
         if (!empty ($book)) {
-           foreach ($book as $content) {
-                if ($content['TableContent']['children'] == 1 ) {
-                    echo '<li id="list_'.$content['TableContent']['id'].'" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div><ol>';
+           $this->Session->write('haveContent', true);
+           foreach ($book as $content) {         
+                if ($content['TableContent']['children'] == 1 ) {         
+                    echo '<li id="item_'.$content['TableContent']['id'].'" item_id="'.$content['TableContent']['id'].'" is_parent="'.$content['TableContent']['children'].'" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div><ol>';
                     $this->loadTable($id, $content['TableContent']['id']);
                     echo '</ol></li>';
                 } else {
-                   echo '<li id="list_'.$content['TableContent']['id'].'" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div></li>';
+                   echo '<li id="item_'.$content['TableContent']['id'].'" item_id="'.$content['TableContent']['id'].'" is_parent="0" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div></li>';
                 }
             }  
         } else {
-            echo '<div>Este libro no tiene contenidos.</div>';
+            $bookTitle = $this->Book->find('first', array('field' => 'Book.title', 'conditions' => array('Book.id' => $id)));
+            echo '<div><b>'.$bookTitle['Book']['title'].'</b> no tiene contenidos.</div>';
+            $this->Session->write('haveContent', false);
         }
          
     }
+    
+ 
 
 }

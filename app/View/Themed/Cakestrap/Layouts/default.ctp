@@ -9,13 +9,13 @@
 
         echo $this->Html->css('bootstrap');
         echo $this->Html->css('main');
-        echo $this->Html->css('jquery-ui');
+        echo $this->Html->css('jquery-ui-1.11.0.min');
         echo $this->Html->css('cssCustom');
         echo $this->fetch('css');
         
         echo $this->Html->script('libs/jquery-1.10.2');   
         echo $this->Html->script('libs/jquery-1.10.2.map');
-        echo $this->Html->script('libs/jquery-ui-1.10.4.min');
+        echo $this->Html->script('libs/jquery-ui-1.11.0.min');
         echo $this->Html->script('libs/jquery.mjs.nestedSortable');
         echo $this->Html->script('libs/bootstrap');
         echo $this->Html->script('misJs.js');
@@ -43,5 +43,6 @@
                 <small><?php echo $this->element('sql_dump'); ?></small>
             </div>
         </div>
+        <?php echo $this->Js->writeBuffer(); // Write cached scripts ?>
     </body>
 </html>
