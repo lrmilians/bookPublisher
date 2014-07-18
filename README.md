@@ -1,10 +1,10 @@
 BookPublisher
 =======
 
-[![CakePHP](http://lrmilians.besaba.com/img/books-logo.jpg)](http://lrmilians.besaba.com)
+[![BookPublisher](http://lrmilians.besaba.com/img/books-logo.jpg)](http://lrmilians.besaba.com)
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+BookPublisher es un sistema web para la gestión de Libros de una determinada editora. Desarrollado en el framework CakePHP, permite robustez, flexibilidad
+y funcionaldiad para sus usuarios. Aplica tecnologías como Boostrap, JQuery y Ajax para el Front End.
 
 Some Handy Links
 ----------------
