@@ -28,7 +28,7 @@ class User extends AppModel {
             'alphaNumericDashUnderscore' => array(
                 'rule' => array('alphaNumericDashUnderscore'),
                 'message' => 'El nombre de usuario debe tener solamente letras, números y underscores.',
-            ),
+            )           
         ),
         'password' => array(
             'required' => array(

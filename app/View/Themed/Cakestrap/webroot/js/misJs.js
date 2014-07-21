@@ -3,6 +3,25 @@ $(document).ready(function() {
     sortableContent();
 });
 
+function menuActions() {
+    $('.navigation li').hover(
+            function() {
+                $('.level1', this).fadeIn();
+            },
+            function() {
+                $('.level1', this).fadeOut();
+            }
+    );
+    $('.level1 li').hover(
+            function() {
+                $('.level2', this).fadeIn();
+            },
+            function() {
+                $('.level2', this).fadeOut();
+            }
+    );
+}
+
 function sortableContent () {
     $('.sortable').nestedSortable({
         handle: 'div',
@@ -61,22 +80,18 @@ function updateContent() {
     });
 }
 
-function menuActions() {
-    $('.navigation li').hover(
-            function() {
-                $('.level1', this).fadeIn();
-            },
-            function() {
-                $('.level1', this).fadeOut();
-            }
-    );
-    $('.level1 li').hover(
-            function() {
-                $('.level2', this).fadeIn();
-            },
-            function() {
-                $('.level2', this).fadeOut();
-            }
-    );
+function showContentSelect() {
+    $.ajax({
+        type: 'post',
+        url: '',
+        //async: false,
+        data: {values: arrayItem},
+        success: function(data) {
+           alert("Contenido actualizado"); 
+        },
+        error: function(obj, resultCode, c) {
+            console.log(resultCode);     
+        }     
+    });
 }
 
