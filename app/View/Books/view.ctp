@@ -2,7 +2,10 @@
     <div id="page-content" class="col-sm-12">
         <div class="books view col-sm-12">
             <h2><?php  echo __('Libro'); ?></h2>
-            <div class="table-responsive">
+            <div class="col-sm-12">
+                <h5 class="col-sm-2"><?php echo $this->Html->link(__('Contenido'), array('action' => 'showContent', $book['Book']['id']), array('class' => 'btn btn-large btn-primary')); ?></h5>
+            </div>
+            <div class="table-responsive col-sm-12">
                 <table class="table table-striped table-bordered table-hover">
                     <tbody>
                         <tr>
@@ -40,7 +43,7 @@
                                             <ul class="navigation">
                                                 <li><a href="#"><?php echo $this->Html->image('tools.png')?></a>
                                                     <ul class="level1">
-                                                        <li><?php echo $this->Html->link(__('ver'), array('controller' => 'table_contents', 'action' => 'view', $tableContent['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
+                                                        <li><?php echo $this->Html->link(__('Ver'), array('controller' => 'table_contents', 'action' => 'view', $tableContent['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
                                                         <li><?php echo $this->Html->link(__('Editar'), array('controller' => 'table_contents', 'action' => 'edit', $tableContent['id']), array('class' => 'btn btn-default btn-xs')); ?></li>
                                                         <li><?php echo $this->Form->postLink(__('Eliminar'), array('controller' => 'table_contents', 'action' => 'delete', $tableContent['id']), array('class' => 'btn btn-default btn-xs'), __('Está seguro que desea eliminar el contenido '. $tableContent['content'] .'?', $tableContent['id'])); ?></li>         
                                                     </ul>
