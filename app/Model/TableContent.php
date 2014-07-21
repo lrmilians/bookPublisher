@@ -1,5 +1,4 @@
 <?php
-
 App::uses('AppModel', 'Model');
 
 class TableContent extends AppModel {
@@ -14,6 +13,6 @@ class TableContent extends AppModel {
             'fields' => '',
             'order' => ''
         )
-    );
+    ); 
 
 }

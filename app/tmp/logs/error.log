@@ -7611,3 +7611,31 @@ Stack Trace:
 #8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-07-21 14:46:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bookpublisherdb`.`table_contents`, CONSTRAINT `table_contents_fk` FOREIGN KEY (`book_id`) REFERENCES `books` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /table_contents/delete/18
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Model.php(1832): DboSource->create(Object(TableContent), Array, Array)
+#4 C:\xampp\htdocs\bookPublisher\app\Controller\TableContentsController.php(91): Model->save(Array)
+#5 [internal function]: TableContentsController->delete('18')
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TableContentsController), Array)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-21 14:52:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bookpublisherdb`.`table_contents`, CONSTRAINT `table_contents_fk` FOREIGN KEY (`book_id`) REFERENCES `books` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /table_contents/delete/22
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Model.php(1832): DboSource->create(Object(TableContent), Array, Array)
+#4 C:\xampp\htdocs\bookPublisher\app\Controller\TableContentsController.php(97): Model->save(Array)
+#5 [internal function]: TableContentsController->delete('22')
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TableContentsController), Array)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

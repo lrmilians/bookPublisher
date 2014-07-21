@@ -75,15 +75,19 @@ class TableContentsController extends AppController {
         $content = $this->TableContent->find('first', array('conditions' => array('TableContent.id' => $id)));
         
         if ($this->TableContent->delete()) {
-           if ($content['TableContent']['children'] == 1) {
+            if ($content['TableContent']['children'] == 1) {
                $contentChildren = $this->TableContent->find('all', array('conditions' => array('TableContent.parent_id' => $id)));
                foreach ($contentChildren as $children) {
                   $this->TableContent->delete($children['TableContent']['id']);
                }
-               /*echo '<pre>';
-               print_r($contentChildren);
-               echo '</pre>'; die();*/  
-           }
+            }
+            $children = $this->TableContent->find('all', array('conditions' => array('TableContent.parent_id' => $content['TableContent']['parent_id'])));
+            if (empty($children)) {
+                $contentParent['TableContent']['id'] = $content['TableContent']['parent_id'];
+                $contentParent['TableContent']['children'] = 0;
+                $this->TableContent->save($contentParent);
+            }
+           
             $this->Session->setFlash(__('Contenido eliminado.'), 'flash/success');
             $this->redirect(array('action' => 'index'));
         }
