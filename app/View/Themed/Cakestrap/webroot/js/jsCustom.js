@@ -35,14 +35,11 @@ function sortableContent () {
 }
 
 function updateHtml() {
-    var k = 0;
     $("#orde li").each(function(i, elemento) {        
-        k = i + 1;
-        if ($('li#item_' + k).children('ol').length == 0) {
-            $('li#item_' + k).attr('is_parent', '0');
+        if ($(this).children('ol').length == 0) {
+            $(this).attr('is_parent', '0');
         } else {
-            $('li#item_' + k).attr('is_parent', '1');
-
+            $(this).attr('is_parent', '1');
         }
     });
 }
@@ -73,7 +70,7 @@ function updateContent() {
         i++;
     }
     
-    showContentSelect(arrayItem);   
+    showContentSelect(arrayItem);
 }
 
 function showContentSelect(arrayItem) {

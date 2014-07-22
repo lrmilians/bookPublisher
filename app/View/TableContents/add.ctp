@@ -11,7 +11,7 @@
                     </div>
                     <div class="form-group col-sm-6">
                         <div class="form-group">
-                            <?php echo $this->Form->input('book_id', array('label' => 'Libro', 'class' => 'form-control')); ?>
+                            <?php echo $this->Form->input('book_id', array('label' => 'Libro *', 'empty' => '--Seleccione un Libro--', 'class' => 'form-control')); ?>
                         </div>
                         <div class="form-group">
                             <?php echo $this->Form->input('parent_id', array('label' => 'Contenido Padre', 'class' => 'form-control')); ?>

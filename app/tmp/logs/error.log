@@ -7648,3 +7648,17 @@ Request URL: /js/libs/jquery-1.10.2.min.map.js
 Stack Trace:
 #0 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-07-22 00:50:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'book_id' cannot be null
+Request URL: /table_contents/add
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `bo...', Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Model.php(1832): DboSource->create(Object(TableContent), Array, Array)
+#4 C:\xampp\htdocs\bookPublisher\app\Controller\TableContentsController.php(38): Model->save(Array)
+#5 [internal function]: TableContentsController->add()
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TableContentsController), Array)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

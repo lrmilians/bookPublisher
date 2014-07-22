@@ -9,6 +9,10 @@ class TableContentsController extends AppController {
 
     public function index() {
         $this->TableContent->recursive = 0;
+        $this->paginate = array(
+            'limit' => 30,
+            'order' => array('TableContent.book_id' => 'asc', 'TableContent.order' => 'asc'),
+        );
         $this->set('tableContents', $this->paginate());
     }
 
