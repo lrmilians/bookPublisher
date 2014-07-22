@@ -7639,3 +7639,12 @@ Stack Trace:
 #8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-07-21 22:45:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/libs/jquery-1.10.2.min.map.js
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -13,13 +13,12 @@
         echo $this->Html->css('cssCustom');
         echo $this->fetch('css');
         
-        echo $this->Html->script('libs/jquery-1.10.2');   
-       // echo $this->Html->script('libs/jquery-1.10.2.map');
+       /* echo $this->Html->script('libs/jquery-1.10.2.map');   */
+        echo $this->Html->script('libs/jquery-1.10.2.min'); 
         echo $this->Html->script('libs/jquery-ui-1.11.0.min');
         echo $this->Html->script('libs/jquery.mjs.nestedSortable');
         echo $this->Html->script('libs/bootstrap');
-        echo $this->Html->script('misJs.js');
-        echo $this->Html->script('autocomplete.js');
+        echo $this->Html->script('jsCustom.js');
         echo $this->fetch('script');
         ?>
     </head>

@@ -5,20 +5,20 @@ $(document).ready(function() {
 
 function menuActions() {
     $('.navigation li').hover(
-            function() {
-                $('.level1', this).fadeIn();
-            },
-            function() {
-                $('.level1', this).fadeOut();
-            }
+        function() {
+            $('.level1', this).fadeIn();
+        },
+        function() {
+            $('.level1', this).fadeOut();
+        }
     );
     $('.level1 li').hover(
-            function() {
-                $('.level2', this).fadeIn();
-            },
-            function() {
-                $('.level2', this).fadeOut();
-            }
+        function() {
+            $('.level2', this).fadeIn();
+        },
+        function() {
+            $('.level2', this).fadeOut();
+        }
     );
 }
 
@@ -26,22 +26,29 @@ function sortableContent () {
     $('.sortable').nestedSortable({
         handle: 'div',
         items: 'li',
-        toleranceElement: '> div'
+        toleranceElement: '> div',
+        protectRoot: true,
+        update : function (event, ui){
+            updateHtml();
+        }
+    });
+}
+
+function updateHtml() {
+    var k = 0;
+    $("#orde li").each(function(i, elemento) {        
+        k = i + 1;
+        if ($('li#item_' + k).children('ol').length == 0) {
+            $('li#item_' + k).attr('is_parent', '0');
+        } else {
+            $('li#item_' + k).attr('is_parent', '1');
+
+        }
     });
 }
 
 function updateContent() {
-    var k = 0;
-    $(".sortable li").each(function(i) {
-        k = i + 1;
-        if ($('li#item_' + k).find("ol").length == 0) {
-            $('li#item_' + k).attr('is_parent', '0');
-        } else {
-            if ($('li#item_' + k).find("ol").length > 0) {
-                $('li#item_' + k).attr('is_parent', '1');
-            }
-        }
-    });
+    updateHtml();
     
     var arrayItem = new Array (new Array ());
     var dataArray = $('.sortable').nestedSortable('toArray');
@@ -66,25 +73,14 @@ function updateContent() {
         i++;
     }
     
+    showContentSelect(arrayItem);   
+}
+
+function showContentSelect(arrayItem) {
     $.ajax({
         type: 'post',
         url: '',
         async: false,
-        data: {values: arrayItem},
-        success: function(data) {
-           alert("Contenido actualizado"); 
-        },
-        error: function(obj, resultCode, c) {
-            console.log(resultCode);     
-        }     
-    });
-}
-
-function showContentSelect() {
-    $.ajax({
-        type: 'post',
-        url: '',
-        //async: false,
         data: {values: arrayItem},
         success: function(data) {
            alert("Contenido actualizado"); 

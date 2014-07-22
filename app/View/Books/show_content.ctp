@@ -4,7 +4,7 @@
             <h2><?php  echo __('Temas del libro '.$book['Book']['title']); ?></h2>
             <div class="table-responsive">
                 <section id="demo">
-                    <ol class="sortable ui-sortable">
+                    <ol id="orde" class="sortable ui-sortable">
                          <?php $this->requestAction('/books/loadTable/'.$bookId.'/'.'0'); ?>
                     </ol>
                 </section>  

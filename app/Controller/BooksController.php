@@ -100,7 +100,7 @@ class BooksController extends AppController {
                     $this->loadTable($id, $content['TableContent']['id']);
                     echo '</ol></li>';
                 } else {
-                   echo '<li id="item_'.$content['TableContent']['id'].'" item_id="'.$content['TableContent']['id'].'" is_parent="0" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div></li>';
+                    echo '<li id="item_'.$content['TableContent']['id'].'" item_id="'.$content['TableContent']['id'].'" is_parent="0" class="mjs-nestedSortable-leaf sortable-element-class"><div class="ui-sortable-handle">'.$content['TableContent']['content'].'</div></li>';
                 }
             }  
         } else {
@@ -111,6 +111,4 @@ class BooksController extends AppController {
          
     }
     
- 
-
 }
