@@ -1,13 +1,14 @@
+
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 18-07-2014 a las 13:37:07
--- Versión del servidor: 5.5.36
--- Versión de PHP: 5.4.27
+-- Servidor: localhost
+-- Tiempo de generación: 23-07-2014 a las 02:51:35
+-- Versión del servidor: 10.0.11-MariaDB
+-- Versión de PHP: 5.2.17
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `bookpublisherdb`
+-- Base de datos: `u428780947_book`
 --
 
 -- --------------------------------------------------------
@@ -29,18 +30,20 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `books` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `title_unique` (`title`) COMMENT 'Title unique'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=12 ;
 
 --
 -- Volcado de datos para la tabla `books`
 --
 
-INSERT INTO `books` (`id`, `title`) VALUES
-(3, 'Libro unico'),
-(1, 'Libro1'),
-(2, 'Nuevo Libro');
+INSERT INTO `books` (`id`, `title`, `created`, `modified`) VALUES
+(1, 'Libro1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 'Nuevo Libro', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 'Libro unico.', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -97,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `functionality_types` (
 --
 
 INSERT INTO `functionality_types` (`id`, `name`, `description`, `created`, `modified`) VALUES
-(1, 'AdministraciÃ³n', 'AdministraciÃ³n', '2011-10-25 13:58:46', '2014-07-15 11:52:49'),
+(1, 'Administración', 'Administración', '2011-10-25 13:58:46', '2014-07-18 20:34:14'),
 (2, 'Reportes', 'Reportes', '2011-10-25 14:04:03', '2011-10-25 14:04:03'),
 (3, 'Operaciones', 'Operaciones', '2012-05-20 18:14:23', '2012-05-20 18:14:23'),
 (4, 'Nomencladores', 'Nomencladores', '2012-09-26 11:30:10', '2014-03-13 16:38:53');
@@ -173,25 +176,33 @@ CREATE TABLE IF NOT EXISTS `table_contents` (
   `parent_id` int(11) NOT NULL,
   `children` tinyint(1) NOT NULL,
   `book_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `table_contents_fk` (`book_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=19 ;
 
 --
 -- Volcado de datos para la tabla `table_contents`
 --
 
-INSERT INTO `table_contents` (`id`, `content`, `level`, `order`, `parent_id`, `children`, `book_id`) VALUES
-(1, 'IntroducciÃ³n', 1, 1, 0, 1, 1),
-(2, 'MotivaciÃ³n', 2, 4, 1, 1, 1),
-(3, 'ReseÃ±a HistÃ³rica', 3, 5, 2, 0, 1),
-(4, 'Origen', 2, 7, 1, 0, 1),
-(5, 'Trabajos', 3, 6, 2, 0, 1),
-(6, 'Soluciones Actuales', 2, 2, 1, 0, 1),
-(7, 'Objetivos', 2, 3, 1, 0, 1),
-(8, 'Requisitos', 1, 8, 0, 1, 1),
-(9, 'Hardware', 2, 9, 8, 0, 1),
-(10, 'Software', 2, 10, 8, 0, 1);
+INSERT INTO `table_contents` (`id`, `content`, `level`, `order`, `parent_id`, `children`, `book_id`, `created`, `modified`) VALUES
+(1, 'Introducción', 1, 1, 0, 1, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 'Motivación', 2, 2, 1, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 'Reseña Histórica', 3, 7, 6, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, 'Origen', 3, 6, 6, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, 'Trabajos', 3, 5, 6, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(6, 'Soluciones Actuales', 2, 3, 1, 1, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(7, 'Objetivos', 2, 8, 1, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(8, 'Requisitos', 1, 9, 0, 1, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(9, 'Hardware', 2, 11, 8, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(10, 'Software', 2, 10, 8, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(12, 'Introducción', 1, 1, 0, 1, 2, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(13, 'Capitulo 1', 2, 2, 12, 0, 2, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(15, 'Epigrafe 1.2', 2, 3, 12, 0, 2, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(16, 'Capitulo 2', 1, 2, 0, 1, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(17, 'Epigrafe ', 1, 1, 0, 0, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(18, 'ccbdfgdfgd', 3, 4, 6, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -229,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `name`, `password`, `address`, `ci`, `ruc`, `phone`, `cell`, `email`, `active`, `role_id`, `created`, `modified`) VALUES
 (7, 'admin', 'Administrador del Sistema', '0af146bfcd696ee8c0571e30a897d753bbe72715', 'las casas', '9999999999', '9999999999999', NULL, NULL, 'admin@gmail,com', 1, 6, '2013-10-21 13:56:02', '2014-03-16 20:07:58'),
-(11, 'lrmilians', 'LÃ¡zaro Raisel Milians Alvarez de la Campa', '0af146bfcd696ee8c0571e30a897d753bbe72715', 'San Carlos N56-155 Diego de trujillo', '1754837548', '1754837548001', '', '0983462403', 'lrmilians@gmail.com', 1, 8, '2014-03-21 00:29:47', '2014-04-03 22:42:46');
+(11, 'lrmilians', 'Lázaro Raisel Milians Alvarez de la Campa', '0af146bfcd696ee8c0571e30a897d753bbe72715', 'San Carlos N56-155 Diego de trujillo', '1754837548', '1754837548001', '', '0983462403', 'lrmilians@gmail.com', 1, 8, '2014-03-21 00:29:47', '2014-07-18 21:08:15');
 
 --
 -- Restricciones para tablas volcadas

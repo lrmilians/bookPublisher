@@ -17,3 +17,7 @@ Code!
 
 [BookPublisher](https://github.com/lrmilians/bookPublisher) - Código de la aplicación.
 
+[BaseDatosScript](https://github.com/lrmilians/bookPublisher/tree/master/db) - Script de la DB.
+
+
+
