@@ -37,5 +37,8 @@ class TableContentTest extends CakeTestCase {
 
 		parent::tearDown();
 	}
+        
+        public function testIsUniqueTableContent() {
+	}
 
 }

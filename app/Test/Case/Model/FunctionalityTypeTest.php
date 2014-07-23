@@ -16,6 +16,7 @@ class FunctionalityTypeTest extends CakeTestCase {
 		'app.functionality_type',
 		'app.functionality',
 		'app.role',
+		'app.user',
 		'app.roles_functionality'
 	);
 
@@ -38,6 +39,11 @@ class FunctionalityTypeTest extends CakeTestCase {
 		unset($this->FunctionalityType);
 
 		parent::tearDown();
+	}
+        
+        
+        
+        public function testIsUniqueFunctionalityType() {
 	}
 
 }

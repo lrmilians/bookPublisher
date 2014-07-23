@@ -41,4 +41,68 @@ class UserTest extends CakeTestCase {
 		parent::tearDown();
 	}
 
+/**
+ * testIsUniqueUsername method
+ *
+ * @return void
+ */
+	public function testIsUniqueUsername() {
+	}
+
+/**
+ * testIsUniqueCi method
+ *
+ * @return void
+ */
+	public function testIsUniqueCi() {
+	}
+
+/**
+ * testIsUniqueEmail method
+ *
+ * @return void
+ */
+	public function testIsUniqueEmail() {
+	}
+
+/**
+ * testIsUniqueRuc method
+ *
+ * @return void
+ */
+	public function testIsUniqueRuc() {
+	}
+
+/**
+ * testAlphaNumericDashUnderscore method
+ *
+ * @return void
+ */
+	public function testAlphaNumericDashUnderscore() {
+	}
+
+/**
+ * testEqualtofield method
+ *
+ * @return void
+ */
+	public function testEqualtofield() {
+	}
+
+/**
+ * testIsCi method
+ *
+ * @return void
+ */
+	public function testIsCi() {
+	}
+
+/**
+ * testIsRucNat method
+ *
+ * @return void
+ */
+	public function testIsRucNat() {
+	}
+
 }

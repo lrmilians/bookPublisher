@@ -7662,3 +7662,297 @@ Stack Trace:
 #8 C:\xampp\htdocs\bookPublisher\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TableContentsController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\bookPublisher\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-07-22 14:32:59 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+Exception Attributes: array (
+  'config' => 'test',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(92): ConnectionManager::getDataSource('test')
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(71): CakeFixtureManager->_initDb()
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(BooksControllerTest))
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#8 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#9 {main}
+2014-07-22 14:33:06 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+Exception Attributes: array (
+  'config' => 'test',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(92): ConnectionManager::getDataSource('test')
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(71): CakeFixtureManager->_initDb()
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(FunctionalitiesControllerTest))
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#8 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#9 {main}
+2014-07-22 14:33:09 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+Exception Attributes: array (
+  'config' => 'test',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(92): ConnectionManager::getDataSource('test')
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(71): CakeFixtureManager->_initDb()
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(RolesControllerTest))
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#8 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#9 {main}
+2014-07-22 14:34:47 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+Exception Attributes: array (
+  'config' => 'test',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(92): ConnectionManager::getDataSource('test')
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(71): CakeFixtureManager->_initDb()
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(UserTest))
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#6 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#8 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#9 {main}
+2014-07-22 14:35:20 Error: [UnexpectedValueException] Referenced fixture class RolesFunctionality (Test\Fixture\RolesFunctionalityFixture.php) not found
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(UserTest))
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#6 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2014-07-22 14:40:21 Error: [UnexpectedValueException] Referenced fixture class RolesFunctionality (Test\Fixture\RolesFunctionalityFixture.php) not found
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(55): CakeFixtureManager->fixturize(Object(UserTest))
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#4 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#5 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#6 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2014-07-22 14:42:36 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:42:36 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 14:42:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionalities', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(UserTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UserTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:45:08 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:45:08 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 14:45:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bookpublisherdb_test`.`functionalities`, CONSTRAINT `functionalities_fk` FOREIGN KEY (`functionality_type_id`) REFERENCES `functionality_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionalities', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(UserTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UserTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:49:30 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 14:49:30 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 14:49:30 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:49:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('roles', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:50:23 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 14:50:23 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 14:50:23 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:50:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('roles', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:50:47 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 14:50:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionality_t...', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:51:16 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 14:51:16 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 14:51:16 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:51:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('roles', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:52:33 Error: Test
+2014-07-22 14:57:26 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 14:57:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionality_t...', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 14:57:42 Error: Fixture creation for "roles" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'roles' already exists"
+2014-07-22 14:57:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('roles', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(UserTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UserTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 15:00:36 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 15:00:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Lorem ipsum dolor sit amet' for key 'name'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionality_t...', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 15:01:45 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 15:01:45 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 15:01:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bookpublisherdb_test`.`functionalities`, CONSTRAINT `functionalities_fk` FOREIGN KEY (`functionality_type_id`) REFERENCES `functionality_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionalities', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 15:02:17 Error: Fixture creation for "functionality_types" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionality_types' already exists"
+2014-07-22 15:02:17 Error: Fixture creation for "functionalities" failed "SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'functionalities' already exists"
+2014-07-22 15:02:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bookpublisherdb_test`.`functionalities`, CONSTRAINT `functionalities_fk` FOREIGN KEY (`functionality_type_id`) REFERENCES `functionality_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('functionalities', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(FunctionalityTypeTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(FunctionalityTypeTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2014-07-22 15:08:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 C:\xampp\htdocs\bookPublisher\lib\Cake\Model\Datasource\DboSource.php(2923): PDOStatement->execute()
+#1 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(289): DboSource->insertMulti('users', Array, Array)
+#2 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(212): CakeTestFixture->insert(Object(Mysql))
+#3 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestCase.php(80): CakeFixtureManager->load(Object(UserTest))
+#4 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UserTest), Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestRunner.php(60): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteCommand.php(95): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(243): CakeTestSuiteCommand->run(Array)
+#10 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#11 C:\xampp\htdocs\bookPublisher\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#12 C:\xampp\htdocs\bookPublisher\app\webroot\test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
